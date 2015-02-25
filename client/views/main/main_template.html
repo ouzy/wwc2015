@@ -1,0 +1,27 @@
+<head>
+  <title>worldcup2015</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+  <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+  <script src="//use.typekit.net/ovq7ipy.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+</head>
+
+<template name="main">
+  <div class='menu_overlay expanded first_time'>
+    <ul>
+      <li><a href="{{pathFor route='teamlist'}}">Teams</a></li>
+      <li><a href="{{pathFor route='maps'}}">Map</a></li>
+      <li><a href="{{pathFor route='about'}}">About</a></li>
+    </ul>
+    <div class='menu_toggle'>
+      <i class="fa fa-plus-circle rotate45"></i>
+    </div>
+  </div>
+  
+  <div class='body_container'>
+  	{{> yield}}
+    
+  </div>
+
+</template>

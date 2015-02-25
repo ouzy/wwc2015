@@ -1,0 +1,261 @@
+/* MAIN AREAS */
+
+$header_font: "cubano";
+$body_font: "pt-sans";
+
+body {
+	font-size: 16px;
+	background-color: rgba(143, 18, 21, 1);
+	color: white;
+	font-family: $body_font;
+}
+.body_container {
+	padding: 50px 100px 0;
+	height: 100%;
+	overflow: hidden;
+}
+h1, h2, h3, h4 {
+	font-family: $header_font;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+
+.center {
+	text-align: center;
+}
+
+.inline-table{
+	display: inline-table;
+}
+
+.fa {
+	&.rotate45 {
+		transition: all .4s;
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+
+	}
+}
+
+#map-canvas {
+	height: 500px; margin: 0; padding: 0;
+	width: 100%;
+}
+
+#map_content {
+	width: 350px;
+	color: black;
+	min-height: 150px;
+	p {
+		margin-top: 2px;
+		margin-bottom: 10px;
+	}
+	a {
+		text-transform: uppercase;
+		font-weight: bold;
+		text-decoration: none;
+		color: rgba(143, 18, 21, 1);
+		&:after {
+			content: ' >>'
+		}
+	}
+}
+
+.labels {
+     color: black;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     width: 40px;     
+     border: 2px solid black;
+     white-space: nowrap;
+   }
+
+.list_container {
+	position: relative;
+	width: 100%;
+	
+	ul {
+		width: 100%;
+		//text-align: center;
+	}
+	.teams li {
+		display: inline-table;
+		width: 16%;
+		margin: 0 0 10px;
+	}
+}
+
+.section_name {
+	margin-bottom: 50px;
+}
+
+.menu_overlay{
+	font-family: $header_font;
+	color: white;
+	background-color: #8f1215;
+	background-color: rgba(143, 18, 21, .9);
+	height: 100%;
+	width: 100%;
+	font-size: 4rem;
+	transition: transform .4s;
+	transform: translateY(-100%) translateY(50px);
+	position: fixed;
+	z-index: 100;
+	a {
+		text-decoration: none;
+		color: inherit;
+		display: block;
+	}
+	&.expanded {
+		transform: translateY(0);
+	}
+	&.first_time {
+		background-color: rgba(143, 18, 21, 1);
+	}
+	ul {
+		
+	}
+	li {
+		padding-left: 80px;
+		margin-bottom: 10px;
+		border-bottom: 3px solid rgba(143, 18, 21, .9);
+		&:hover {
+			border-bottom: 3px solid white;
+		}	
+		/*
+		&:nth-child(1) {
+			&:hover {
+				background-color: #90c036;
+				//border-bottom: 3px solid #90c036;
+			}	
+		}
+		&:nth-child(2) {
+			&:hover {
+				background-color: #3abff3;
+				//border-bottom: 3px solid #3abff3;
+			}	
+		}
+		&:nth-child(3) {
+			&:hover {
+				background-color: #fcb213;
+				//border-bottom: 3px solid #fcb213;
+			}	
+		}*/
+	}
+}
+
+.teams {
+	font-family: $header_font;
+	font-size: 1.4em;
+	position: relative;
+	margin-bottom: 40px;
+	li{
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	a {
+		text-decoration: none;
+		color: white;
+		
+	}
+}
+
+.team_name{
+	&.active {
+		text-decoration: underline;
+	}
+}
+
+.team_details {
+	width: 100%;
+	//max-width: 800px;
+	margin: 0 auto;
+}
+
+.details {
+	display: none;
+	position: relative;
+	transform: translateX(100%);
+	height: 400px;
+	width: 100%;
+	&#aus {
+		display: block;
+		transform: translateX(0);
+	}
+	ul {
+		text-align: left;
+		li {
+			display: block;
+		}
+		span {
+			float: left;
+			width: 100px;
+			position: relative;
+			overflow: hidden;
+			font-family: $header_font;
+			font-weight: bold;
+			margin-right: 10px;
+			&:after {
+				content: ':';
+				position: absolute;
+				right: 0;
+			}
+		}
+	}
+	.text {
+		position: relative;
+		top: 20%;
+		left: 5%;
+		font-size: 1.3em;
+	}
+	.country {
+		margin-bottom: 20px;
+	}
+	.flag {
+		position: absolute;
+		top: 0;
+		left: 13%;
+		z-index: -1;
+		width: 100%;
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+	.overlay {
+		background-color: rgba(143, 18, 21, .7);
+		width: 100%;
+		height: 100%;
+		position: absolute
+	}
+}
+
+.menu_toggle {
+	position: absolute;
+	height: 50px;
+	line-height: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2rem;
+	span {
+		cursor: pointer;
+	}
+	.close{
+		display: none;
+	}
+}
+
