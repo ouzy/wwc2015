@@ -11,6 +11,9 @@ body {
 }
 .body_container {
 	padding: 50px 100px 0;
+	overflow-x: hidden;
+  overflow-y: visible;
+  height: 100%;
 	@include small() {
 		padding: 50px 10px 0;
 	}
@@ -120,7 +123,6 @@ a {
 .menu_overlay{
 	font-family: $header_font;
 	color: white;
-	background-color: #8f1215;
 	background-color: rgba(143, 18, 21, .9);
 	height: 100%;
 	width: 100%;
