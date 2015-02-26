@@ -128,9 +128,9 @@ a {
 	transition: -moz-transform .4s;
 	transition: -webkit-transform .4s;
 	transition: transform .4s;
-	-moz-transform: translateY(-100%) translateY(50px);
-	-webkit-transform: translateY(-100%) translateY(50px);
-	transform: translateY(-100%) translateY(50px);
+	-moz-transform: translate3d(0, -100%, 1px) translate3d(0, 50px, 0);
+	-webkit-transform: translate3d(0, -100%, 1px) translate3d(0, 50px, 0);
+	transform: translate3d(0, -100%, 1px) translate3d(0, 50px, 0);
 	position: fixed;
 	z-index: 100;
 	@include small() {
