@@ -11,7 +11,9 @@ body {
 }
 .body_container {
 	padding: 50px 100px 0;
-	
+	@include small() {
+		padding: 50px 10px 0;
+	}
 }
 .teamlist_container {
 	height: 100%;
@@ -131,6 +133,9 @@ a {
 	transform: translateY(-100%) translateY(50px);
 	position: fixed;
 	z-index: 100;
+	@include small() {
+		font-size: 3rem;
+	}
 	a {
 		display: block;
 	}
@@ -150,6 +155,9 @@ a {
 		padding-left: 80px;
 		margin-bottom: 10px;
 		border-bottom: 3px solid rgba(143, 18, 21, 0);
+		@include small() {
+			padding-left: 10px;
+		}
 		&:hover {
 			border-bottom: 3px solid white;
 		}	
@@ -162,6 +170,10 @@ a {
 	right: -25px;
 	bottom: 50px;
 	width: 70%;
+	@include small() {
+		width: 115%;
+		right: -80px;
+	}
 }
 
 .teams {
@@ -186,6 +198,18 @@ a {
 .team_name{
 	&.active {
 		text-decoration: underline;
+	}
+	.full {
+		display: inline;
+		@include small() {
+			display: none;
+		}
+	}
+	.mobile {
+		display: none;
+		@include small() {
+			display: inline;
+		}
 	}
 }
 
@@ -309,6 +333,9 @@ span.versus {
 	padding-top: 50px;
 	padding-left: 20px;
 	border-top: 1px solid white;
+	@include small() {
+		padding-left: 0;
+	}
 	 &:first-of-type {
 		border-top: 0;
 	}
@@ -316,15 +343,25 @@ span.versus {
 		position: absolute;
 		top: 20px;
 		left: 20px;
+		@include small() {
+			left: 0;
+		}
 	}
 	.date, .location {
 		font-size: .8rem;
 	}
 	.playing {
+		@include small() {
+			margin-top: 10px;
+			text-align: center;
+		}
 	}
 	.team {
 		font-family: $header_font;
 		font-size: 1.8rem;
+		@include small() {
+			font-size: 1.3rem;
+		}
 	}
 }
 

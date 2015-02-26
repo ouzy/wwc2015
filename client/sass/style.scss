@@ -30,6 +30,18 @@ $experimental-support-for-khtml: false;
   #{$property}: calc(#{$expression});
 }
 
+$screen-sm: 800px;
+
+
+//Breakpoint Mixin
+
+// < 750px
+@mixin small(){
+	@media (max-width: $screen-sm){
+		@content;
+	}
+}
+
 
 /* ADDITIONAL RESET */
 html {
