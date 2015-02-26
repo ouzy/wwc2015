@@ -123,9 +123,9 @@ a {
 	height: 100%;
 	width: 100%;
 	font-size: 4rem;
-	transition: transform .4s;
-	transition: -webkit-transform .4s;
 	transition: -moz-transform .4s;
+	transition: -webkit-transform .4s;
+	transition: transform .4s;
 	-moz-transform: translateY(-100%) translateY(50px);
 	-webkit-transform: translateY(-100%) translateY(50px);
 	transform: translateY(-100%) translateY(50px);
@@ -143,16 +143,25 @@ a {
 		background-color: rgba(143, 18, 21, 1);
 	}
 	ul {
-		
+		position: relative;
+		z-index: 1;
 	}
 	li {
 		padding-left: 80px;
 		margin-bottom: 10px;
-		border-bottom: 3px solid rgba(143, 18, 21, .9);
+		border-bottom: 3px solid rgba(143, 18, 21, 0);
 		&:hover {
 			border-bottom: 3px solid white;
 		}	
 	}
+}
+
+.logo_home {
+	position: absolute;
+	z-index: 0;
+	right: -25px;
+	bottom: 50px;
+	width: 70%;
 }
 
 .teams {
@@ -239,13 +248,14 @@ a {
 			width: 100%;
 		}
 	}
-	.overlay {
+}
+
+.overlay {
 		background-color: rgba(143, 18, 21, .7);
 		width: 100%;
 		height: 100%;
 		position: absolute
 	}
-}
 
 .menu_toggle {
 	position: absolute;
