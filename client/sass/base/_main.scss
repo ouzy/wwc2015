@@ -125,6 +125,8 @@ a {
 	font-size: 4rem;
 	transition: transform .4s;
 	transition: -webkit-transform .4s;
+	transition: -moz-transform .4s;
+	-moz-transform: translateY(-100%) translateY(50px);
 	-webkit-transform: translateY(-100%) translateY(50px);
 	transform: translateY(-100%) translateY(50px);
 	position: fixed;
@@ -133,6 +135,7 @@ a {
 		display: block;
 	}
 	&.expanded {
+		-moz-transform: translateY(0);
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
