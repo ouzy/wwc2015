@@ -124,6 +124,8 @@ a {
 	width: 100%;
 	font-size: 4rem;
 	transition: transform .4s;
+	transition: -webkit-transform .4s;
+	-webkit-transform: translateY(-100%) translateY(50px);
 	transform: translateY(-100%) translateY(50px);
 	position: fixed;
 	z-index: 100;
@@ -131,6 +133,7 @@ a {
 		display: block;
 	}
 	&.expanded {
+		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 	&.first_time {
@@ -214,6 +217,9 @@ a {
 		top: 20%;
 		left: 5%;
 		font-size: 1.2rem;
+		.fixture_details{
+			font-size: .8rem;
+		}
 	}
 	.group {
 		margin-bottom: 20px;

@@ -10,6 +10,12 @@ var data = {
 						game1_loc: 'Winnipeg',
 						game2_loc: 'Winnipeg',
 						game3_loc: 'Edmonton',
+						game1_time: '19:30',
+						game2_time: '17:00',
+						game3_time: '20:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'bra',
 						group: 'Group E',
@@ -19,7 +25,13 @@ var data = {
 						game3: 'Costa',
 						game1_loc: 'Montreal',
 						game2_loc: 'Montreal',
-						game3_loc: 'Moncton'
+						game3_loc: 'Moncton',
+						game1_time: '19:00',
+						game2_time: '16:00',
+						game3_time: '19:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	
 						id: 'cam',
@@ -30,7 +42,13 @@ var data = {
 						game3: 'Switzerland',
 						game1_loc: 'Vancouver',
 						game2_loc: 'Vancouver',
-						game3_loc: 'Edmonton'
+						game3_loc: 'Edmonton',
+						game1_time: '19:00',
+						game2_time: '22:00',
+						game3_time: '17:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'can',
 						group: 'Group A',
@@ -40,7 +58,13 @@ var data = {
 						game3: 'Netherlands',
 						game1_loc: 'Edmonton',
 						game2_loc: 'Edmonton',
-						game3_loc: 'Montreal'
+						game3_loc: 'Montreal',
+						game1_time: '18:00',
+						game2_time: '21:00',
+						game3_time: '19:30',
+						game1_date: 'June 6',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	
 						id: 'chi',
@@ -51,7 +75,13 @@ var data = {
 						game3: 'New Zealand',
 						game1_loc: 'Edmonton',
 						game2_loc: 'Edmonton',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '18:00',
+						game2_time: '18:00',
+						game3_time: '19:30',
+						game1_date: 'June 6',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'col',
 						group: 'Group F',
@@ -61,7 +91,13 @@ var data = {
 						game3: 'England',
 						game1_loc: 'Moncton',
 						game2_loc: 'Moncton',
-						game3_loc: 'Montreal'
+						game3_loc: 'Montreal',
+						game1_time: '16:00',
+						game2_time: '13:00',
+						game3_time: '16:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'crc',
 						group: 'Group E',
@@ -71,7 +107,13 @@ var data = {
 						game3: 'Brazil',
 						game1_loc: 'Montreal',
 						game2_loc: 'Montreal',
-						game3_loc: 'Moncton'
+						game3_loc: 'Moncton',
+						game1_time: '16:00',
+						game2_time: '19:00',
+						game3_time:'19:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'ecu',
 						group: 'Group C',
@@ -81,7 +123,13 @@ var data = {
 						game3: 'Japan',
 						game1_loc: 'Vancouver',
 						game2_loc: 'Vancouver',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '19:00',
+						game2_time: '19:00',
+						game3_time: '17:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'eng',
 						group: 'Group F',
@@ -91,7 +139,13 @@ var data = {
 						game3: 'Colombia',
 						game1_loc: 'Moncton',
 						game2_loc: 'Moncton',
-						game3_loc: 'Montreal'
+						game3_loc: 'Montreal',
+						game1_time: '13:00',
+						game2_time: '16:00',
+						game3_time: '16:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'fra',
 						group: 'Group F',
@@ -101,7 +155,13 @@ var data = {
 						game3: 'Mexico',
 						game1_loc: 'Moncton',
 						game2_loc: 'Moncton',
-						game3_loc: 'Ottawa'
+						game3_loc: 'Ottawa',
+						game1_time: '13:00',
+						game2_time: '13:00',
+						game3_time: '16:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'ger',
 						group: 'Group B',
@@ -111,7 +171,13 @@ var data = {
 						game3:'Thailand',
 						game1_loc: 'Ottawa',
 						game2_loc: 'Ottawa',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '16:00',
+						game2_time: '16:00',
+						game3_time: '16:00',
+						game1_date: 'June 7',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'ivc',
 						group: 'Group B',
@@ -121,7 +187,13 @@ var data = {
 						game3: 'Norway',
 						game1_loc: 'Ottawa',
 						game2_loc: 'Ottawa',
-						game3_loc: 'Moncton'
+						game3_loc: 'Moncton',
+						game1_time: '16:00',
+						game2_time: '19:00',
+						game3_time: '16:00',
+						game1_date: 'June 7',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'jap',
 						group: 'Group C',
@@ -131,7 +203,13 @@ var data = {
 						game3: 'Ecuador',
 						game1_loc: 'Vancouver',
 						game2_loc: 'Vancouver',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '22:00',
+						game2_time: '22:00',
+						game3_time: '17:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'mex',
 						group: 'Group F',
@@ -141,7 +219,13 @@ var data = {
 						game3: 'France',
 						game1_loc: 'Moncton',
 						game2_loc: 'Moncton',
-						game3_loc: 'Ottawa'
+						game3_loc: 'Ottawa',
+						game1_time: '16:00',
+						game2_time: '16:00',
+						game3_time: '16:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'ned',
 						group: 'Group A',
@@ -151,7 +235,13 @@ var data = {
 						game3: 'Canada',
 						game1_loc: 'Edmonton',
 						game2_loc: 'Edmonton',
-						game3_loc: 'Montreal'
+						game3_loc: 'Montreal',
+						game1_time: '21:00',
+						game2_time: '18:00',
+						game3_time: '19:30',
+						game1_date: 'June 6',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'nzl',
 						group: 'Group A',
@@ -161,7 +251,13 @@ var data = {
 						game3: 'China',
 						game1_loc: 'Edmonton',
 						game2_loc: 'Edmonton',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '21:00',
+						game2_time: '18:00',
+						game3_time: '19:30',
+						game1_date: 'June 6',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'nig',
 						group: 'Group D',
@@ -171,7 +267,13 @@ var data = {
 						game3: 'United States',
 						game1_loc: 'Winnipeg',
 						game2_loc: 'Winnipeg',
-						game3_loc: 'Vancouver'
+						game3_loc: 'Vancouver',
+						game1_time: '16:00',
+						game2_time: '17:00',
+						game3_time: '20:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'nor',
 						group: 'Group B',
@@ -181,7 +283,13 @@ var data = {
 						game3: 'Ivory Coast',
 						game1_loc: 'Ottawa',
 						game2_loc: 'Ottawa',
-						game3_loc: 'Moncton'
+						game3_loc: 'Moncton',
+						game1_time: '13:00',
+						game2_time: '16:00',
+						game3_time: '16:00',
+						game1_date: 'June 7',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'skr',
 						group: 'Group E',
@@ -191,7 +299,13 @@ var data = {
 						game3: 'Spain',
 						game1_loc: 'Montreal',
 						game2_loc: 'Montreal',
-						game3_loc: 'Ottawa'
+						game3_loc: 'Ottawa',
+						game1_time: '19:00',
+						game2_time: '19:00',
+						game3_time: '19:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'spa',
 						group: 'Group E',
@@ -201,7 +315,13 @@ var data = {
 						game3: 'South Korea',
 						game1_loc: 'Montreal',
 						game2_loc: 'Montreal',
-						game3_loc: 'Ottawa'
+						game3_loc: 'Ottawa',
+						game1_time: '16:00',
+						game2_time: '16:00',
+						game3_time: '19:00',
+						game1_date: 'June 9',
+						game2_date: 'June 13',
+						game3_date: 'June 17'
 					},
 					{	id: 'swe',
 						group: 'Group D',
@@ -211,7 +331,13 @@ var data = {
 						game3: 'Australia',
 						game1_loc: 'Winnipeg',
 						game2_loc: 'Winnipeg',
-						game3_loc: 'Edmonton'
+						game3_loc: 'Edmonton',
+						game1_time: '16:00',
+						game2_time: '20:00',
+						game3_time: '20:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'sui',
 						group: 'Group C',
@@ -221,7 +347,13 @@ var data = {
 						game3: 'Cameroon',
 						game1_loc: 'Vancouver',
 						game2_loc: 'Vancouver',
-						game3_loc: 'Edmonton'
+						game3_loc: 'Edmonton',
+						game1_time: '22:00',
+						game2_time: '19:00',
+						game3_time: '17:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					},
 					{	id: 'tld',
 						group: 'Group B',
@@ -231,7 +363,13 @@ var data = {
 						game3:'Germany',
 						game1_loc: 'Ottawa',
 						game2_loc: 'Ottawa',
-						game3_loc: 'Winnipeg'
+						game3_loc: 'Winnipeg',
+						game1_time: '13:00',
+						game2_time: '19:00',
+						game3_time: '16:00',
+						game1_date: 'June 7',
+						game2_date: 'June 11',
+						game3_date: 'June 15'
 					},
 					{	id: 'usa',
 						group: 'Group D',
@@ -241,7 +379,13 @@ var data = {
 						game3: 'Nigeria',
 						game1_loc: 'Winnipeg',
 						game2_loc: 'Winnipeg',
-						game3_loc: 'Vancouver'
+						game3_loc: 'Vancouver',
+						game1_time: '19:30',
+						game2_time: '20:00',
+						game3_time: '20:00',
+						game1_date: 'June 8',
+						game2_date: 'June 12',
+						game3_date: 'June 16'
 					}],
 
   				stadium: [{location: 'Edmonton', id: 1}, {location: 'Moncton', id: 2}, {location: 'Montreal', id: 3}, {location: 'Ottawa', id: 4}, {location: 'Vancouver', id: 5}, {location: 'Winnipeg', id: 6}]
