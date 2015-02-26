@@ -4,7 +4,7 @@ Template.maps.rendered = function () {
 }
 
 Template.main.events({
-	'click .menu_toggle .fa': function(e){
+	'click .menu_toggle': function(e){
 		e.preventDefault();
 		$('.menu_overlay').toggleClass('expanded');
     $('.menu_toggle .fa').toggleClass('rotate45');
