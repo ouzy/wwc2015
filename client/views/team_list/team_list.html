@@ -1,35 +1,38 @@
 <template name="teamlist">
-	<div class='section_name left'>
-		<h1 class=''>Teams</h1>
-	</div>
-	<div class='list_container'>
-		
-		<ul class='teams left'>
-			{{#each teams}}
-				<li class='team_name' id='{{id}}'>
-					{{country}}
-				</li>
+	<div class='teamlist_container'>
+		<div class='section_name left'>
+			<h1 class=''>Teams</h1>
+		</div>
+		<div class='list_container'>
+			
+			<ul class='teams left'>
+				{{#each teams}}
+					<li class='team_name' id='{{id}}'>
+						{{country}}
+					</li>
+					{{/each}}
+			</ul>
+			
+			<div class='team_details'>
+				{{#each teams}}
+				<div class='details left' id='{{id}}'>
+					<div class='text'>
+						<h1 class='country'>{{country}}</h1>
+						<p class='group'>{{group}}</p>
+						<ul>
+							<li><span class='match'>Match 1</span> <span class='versus'>v</span>{{game1}}</li>
+							<li><span class='match'>Match 2</span> <span class='versus'>v</span>{{game2}}</li>
+							<li><span class='match'>Match 3</span> <span class='versus'>v</span>{{game3}}</li>	
+						</ul>
+						<h3>Squad (coming soon)</h3>
+					</div>
+					<div class='flag'>
+						<div class='overlay'></div>
+						<img  src="/images/{{id}}.png">
+					</div>
+				</div>
 				{{/each}}
-		</ul>
-		
-		<div class='team_details'>
-			{{#each teams}}
-			<div class='details left' id='{{id}}'>
-				<div class='text'>
-					<h2 class='country'>{{country}}</h2>
-					<p>{{group}}</p>
-					<ul>
-						<li><span>Match 1</span> {{game1}}</li>
-						<li><span>Match 2</span> {{game2}}</li>
-						<li><span>Match 3</span> {{game3}}</li>	
-					</ul>
-				</div>
-				<div class='flag'>
-					<div class='overlay'></div>
-					<img  src="/images/{{id}}.png">
-				</div>
 			</div>
-			{{/each}}
 		</div>
 	</div>
 </template>

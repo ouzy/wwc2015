@@ -1,0 +1,16 @@
+<template name="schedule">
+	<div class='section_name'>
+		<h1 class=''>Match schedule</h1>
+	</div>
+	<div class='content schedule'>
+		<h3>Group stage matches</h3>
+			{{#each schedule}}
+				<div class='fixture'>
+					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
+					<p class='playing'><span class='team'>{{home}}</span> <span class='versus'>v</span> <span class='team'>{{away}}</span></p>
+					<p class='location'></p>
+					
+				</div>
+			{{/each}}
+	</div>
+</template>

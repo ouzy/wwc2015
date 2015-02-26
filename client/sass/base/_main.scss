@@ -11,19 +11,30 @@ body {
 }
 .body_container {
 	padding: 50px 100px 0;
+	
+}
+.teamlist_container {
 	height: 100%;
-	overflow: hidden;
 }
 h1, h2, h3, h4 {
 	font-family: $header_font;
 }
 
-h1 { font-size: 3em; }
+h1 { font-size: 3em}
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
 h6 { font-size: .75em; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 1rem;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
 
 .center {
 	text-align: center;
@@ -31,6 +42,10 @@ h6 { font-size: .75em; }
 
 .inline-table{
 	display: inline-table;
+}
+
+.content {
+	width: 100%;
 }
 
 .fa {
@@ -52,6 +67,9 @@ h6 { font-size: .75em; }
 	width: 350px;
 	color: black;
 	min-height: 150px;
+	h3 {
+		margin-bottom: 0;
+	}
 	p {
 		margin-top: 2px;
 		margin-bottom: 10px;
@@ -59,7 +77,6 @@ h6 { font-size: .75em; }
 	a {
 		text-transform: uppercase;
 		font-weight: bold;
-		text-decoration: none;
 		color: rgba(143, 18, 21, 1);
 		&:after {
 			content: ' >>'
@@ -111,8 +128,6 @@ h6 { font-size: .75em; }
 	position: fixed;
 	z-index: 100;
 	a {
-		text-decoration: none;
-		color: inherit;
 		display: block;
 	}
 	&.expanded {
@@ -131,25 +146,6 @@ h6 { font-size: .75em; }
 		&:hover {
 			border-bottom: 3px solid white;
 		}	
-		/*
-		&:nth-child(1) {
-			&:hover {
-				background-color: #90c036;
-				//border-bottom: 3px solid #90c036;
-			}	
-		}
-		&:nth-child(2) {
-			&:hover {
-				background-color: #3abff3;
-				//border-bottom: 3px solid #3abff3;
-			}	
-		}
-		&:nth-child(3) {
-			&:hover {
-				background-color: #fcb213;
-				//border-bottom: 3px solid #fcb213;
-			}	
-		}*/
 	}
 }
 
@@ -158,6 +154,7 @@ h6 { font-size: .75em; }
 	font-size: 1.4em;
 	position: relative;
 	margin-bottom: 40px;
+	z-index: 1;
 	li{
 		cursor: pointer;
 		&:hover {
@@ -189,42 +186,42 @@ h6 { font-size: .75em; }
 	transform: translateX(100%);
 	height: 400px;
 	width: 100%;
+	h3 {
+		font-size: 1em;
+	}
 	&#aus {
 		display: block;
 		transform: translateX(0);
 	}
 	ul {
 		text-align: left;
+		margin-bottom: 20px;
 		li {
 			display: block;
 		}
-		span {
+		span.match_num {
 			float: left;
-			width: 100px;
+			width: 110px;
 			position: relative;
 			overflow: hidden;
 			font-family: $header_font;
 			font-weight: bold;
 			margin-right: 10px;
-			&:after {
-				content: ':';
-				position: absolute;
-				right: 0;
-			}
 		}
 	}
 	.text {
 		position: relative;
 		top: 20%;
 		left: 5%;
-		font-size: 1.3em;
+		font-size: 1.2rem;
 	}
-	.country {
+	.group {
 		margin-bottom: 20px;
+		font-size: .9rem;
 	}
 	.flag {
 		position: absolute;
-		top: 0;
+		top: -110px;
 		left: 13%;
 		z-index: -1;
 		width: 100%;
@@ -258,4 +255,64 @@ h6 { font-size: .75em; }
 		display: none;
 	}
 }
+
+.content.about {
+	ul {
+		margin-bottom: 20px;
+	}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+span.match_num {
+	float: left;
+	width: 80px;
+	font-family: $header_font;
+	position: relative;
+	margin-right: 10px;
+	&:after {
+		content: ':';
+		position: absolute;
+		right: 0;
+	}
+}
+span.versus {
+	font-size: .7rem;
+	margin: 0 10px;
+}
+
+.fixture {
+	position: relative;
+	height: 110px;
+	padding-top: 50px;
+	padding-left: 20px;
+	border-top: 1px solid white;
+	 &:first-of-type {
+		border-top: 0;
+	}
+	.date {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+	.date, .location {
+		font-size: .8rem;
+	}
+	.playing {
+	}
+	.team {
+		font-family: $header_font;
+		font-size: 1.8rem;
+	}
+}
+
+
+
+
+
+
+
 
