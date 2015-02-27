@@ -8,11 +8,13 @@ body {
 	background-color: rgba(143, 18, 21, 1);
 	color: white;
 	font-family: $body_font;
+	overflow-x:hidden;
 }
 .body_container {
 	padding: 50px 100px 0;
 	overflow-x: hidden;
   overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
 	@include small() {
 		padding: 50px 10px 0;
