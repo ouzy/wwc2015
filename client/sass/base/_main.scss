@@ -10,6 +10,25 @@ body {
 	font-family: $body_font;
 	overflow-x:hidden;
 }
+
+.show-big {
+	display: initial;
+	@include small() {
+		display: none;
+	}
+}
+
+.header-text {
+	font-family: $header_font;
+}
+
+.show-small {
+	display: none;
+	@include small() {
+		display: initial;
+	}
+}
+
 .body_container {
 	padding: 50px 100px 0;
 	overflow-x: hidden;
@@ -371,7 +390,17 @@ span.versus {
 	}
 }
 
+.group_table {
+	//width: 100%;
+	margin-bottom: 20px;
+	td {
+		padding: 10px 20px;
+		&:first-of-type {
+			width: 150px;
+		}
+	}
 
+}
 
 
 
