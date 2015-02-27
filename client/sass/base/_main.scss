@@ -397,6 +397,12 @@ span.versus {
 		padding: 10px 20px;
 		&:first-of-type {
 			width: 150px;
+			@include small() {
+				width: 100px;
+			}
+		}
+		@include small() {
+			padding: 10px 5px;
 		}
 	}
 
