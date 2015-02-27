@@ -398,11 +398,12 @@ span.versus {
 		&:first-of-type {
 			width: 150px;
 			@include small() {
-				width: 100px;
+				width: 80px;
 			}
 		}
 		@include small() {
 			padding: 10px 5px;
+			min-width: 30px;
 		}
 	}
 
