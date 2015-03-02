@@ -78,9 +78,9 @@ a {
 .fa {
 	&.rotate45 {
 		transition: all .4s;
-		-moz-transform: rotate(45deg);
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg);
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
 
 	}
 }
