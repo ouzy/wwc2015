@@ -395,7 +395,7 @@ span.versus {
 	//width: 100%;
 	margin-bottom: 20px;
 	td {
-		padding: 10px 20px;
+		padding: 10px 10px;
 		&:first-of-type {
 			width: 150px;
 			@include small() {
@@ -409,7 +409,16 @@ span.versus {
 	}
 }
 
-
+.legend {
+	position: fixed;
+	top: 150px;
+	left: 600px;
+	@include small() {
+		position: relative;
+		left: 0;
+		margin-bottom: 20px;
+	}
+}
 
 
 
