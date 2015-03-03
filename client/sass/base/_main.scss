@@ -396,7 +396,9 @@ span.versus {
 	margin-bottom: 20px;
 	td {
 		padding: 10px 10px;
+		text-align: center;
 		&:first-of-type {
+			text-align: left;
 			width: 150px;
 			@include small() {
 				width: 80px;
