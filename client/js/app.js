@@ -1278,6 +1278,10 @@ Router.route('home', {
 	path: '/'
 });
 
+Router.route('today', {
+	path: '/today'
+});
+
 Router.route('schedule', {
 	path: '/schedule'
 });
