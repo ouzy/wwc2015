@@ -1261,7 +1261,9 @@ Template.main.helpers({
 
 
 Template.teamlist.helpers(data); 
+
 Template.schedule.helpers(match);
+
 Template.groups.helpers(data);
 Template.groups.helpers(
 	{
@@ -1284,6 +1286,10 @@ Router.route('today', {
 
 Router.route('schedule', {
 	path: '/schedule'
+});
+
+Router.route('update', {
+	path: '/update'
 });
 
 Router.route('groups', {
