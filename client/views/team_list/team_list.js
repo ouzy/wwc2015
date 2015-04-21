@@ -15,6 +15,17 @@ Template.teamlist.rendered = function() {
   					display: "block" 
   				}); 	
 		}, 500);
+    setTimeout(function() {
+        $('.details#aus' + " .text")
+          .velocity(
+            { 
+              translateX:'100%'
+            })
+          .velocity(
+            { 
+              translateX:'0'
+            });   
+      }, 700);
 }
 
 
@@ -47,6 +58,17 @@ Template.teamlist.events({
   					display: "block" 
   				}); 	
 		}, 200);
+    setTimeout(function() {
+      $('.details#'+team + " .text")
+        .velocity(
+          { 
+            translateX:'100%'
+          })
+        .velocity(
+          { 
+            translateX:'0'
+          });   
+    }, 300);
 	}
 })
 
