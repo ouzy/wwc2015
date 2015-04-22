@@ -2,6 +2,26 @@
 	<div class='section_name'>
 		<h1 class=''>Today's matches</h1>
 	</div>
-
-	<p>The tournament kicks off on June 6. Check back then! In the meantime, <a href="{{pathFor route='schedule'}}">check out the schedule!</a></p>
+	<div class='today'>
+		<p>The tournament kicks off on June 6. Check back then! In the meantime, <a href="{{pathFor route='schedule'}}">check out the schedule!</a></p>
+	
+		{{#each schedule}}
+			{{#if dateIs "June 6"}}
+				<div class='fixture'>
+					<p class='playing'><span class='team'>{{home}}</span> <span class='versus'>v</span> <span class='team'>{{away}}</span></p>
+					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
+					<div class='flag'>
+						<div class='overlay'></div>
+						<div class='home'>
+							<img class='' src="/images/{{home_id}}.png">
+						</div>
+						<div class='away'>
+							<img class='' src="/images/{{away_id}}.png">
+						</div>
+					</div>
+				</div>
+			{{/if}}
+		{{/each}}
+	</div>
+	
 </template>

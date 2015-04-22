@@ -724,7 +724,14 @@ var data = {
 						points: 0
 					}],
 
-  				stadium: [{location: 'Edmonton', id: 1}, {location: 'Moncton', id: 2}, {location: 'Montreal', id: 3}, {location: 'Ottawa', id: 4}, {location: 'Vancouver', id: 5}, {location: 'Winnipeg', id: 6}]
+  				stadium: [
+  					{location: 'Edmonton', id: 1}, 
+  					{location: 'Moncton', id: 2}, 
+  					{location: 'Montreal', id: 3}, 
+  					{location: 'Ottawa', id: 4}, 
+  					{location: 'Vancouver', id: 5}, 
+  					{location: 'Winnipeg', id: 6}
+  				]
 };
 
 var match = {
@@ -1269,6 +1276,14 @@ Template.groups.helpers(
 	{
   groupIs: function (group) {
     return this.group === group;
+  }
+});
+
+Template.today.helpers(match);
+Template.today.helpers(
+	{
+  dateIs: function (date) {
+    return this.date === date;
   }
 });
 
