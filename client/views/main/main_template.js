@@ -22,8 +22,11 @@ Template.main.events({
     $('.menu_toggle .fa').toggleClass('rotate45');
 	},
 	'click .menu_overlay.expanded li': function(e){
-		$('.menu_overlay').toggleClass('expanded').removeClass('first_time');
-    $('.menu_toggle .fa').toggleClass('rotate45');
+		$('.menu_overlay')
+			.toggleClass('expanded')
+			.removeClass('first_time');
+    $('.menu_toggle .fa')
+    	.toggleClass('rotate45');
 
 	}
 })
