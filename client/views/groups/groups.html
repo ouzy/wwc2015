@@ -15,18 +15,18 @@
 			<td> P </td>
 		</tr>
 		{{#each teams}}
-		{{#if groupIs "Group A"}}
-		<tr>
-			<td class='header-text'> <span class='show-big'>{{country}}</span> <span class='show-small'>{{id}}</span> </td>
-			<td> {{matches_played}} </td>
-			<td> {{wins}} </td>
-			<td> {{draws}} </td>
-			<td> {{losses}} </td>
-			<td> {{goalsFor}} </td>
-			<td> {{goalsAgainst}} </td>
-			<td> {{goalDiff}} </td>
-			<td> {{points}} </td>
-		</tr>
+			{{#if groupIs "Group A"}}
+				<tr>
+					<td class='header-text'> <span class='show-big'>{{country}}</span> <span class='show-small'>{{id}}</span> </td>
+					<td> {{matches_played}} </td>
+					<td> {{wins}} </td>
+					<td> {{draws}} </td>
+					<td> {{losses}} </td>
+					<td> {{goalsFor}} </td>
+					<td> {{goalsAgainst}} </td>
+					<td> {{goalDiff}} </td>
+					<td> {{points}} </td>
+				</tr>
 			{{/if}}
 		{{/each}}
 	</table>

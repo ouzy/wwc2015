@@ -13,7 +13,7 @@ Template.teamlist.rendered = function() {
   				},
   				{ 
   					display: "block" 
-  				}); 	
+  				},  "ease-out"); 	
 		}, 500);
     setTimeout(function() {
         $('.details#aus' + " .text")
@@ -24,7 +24,7 @@ Template.teamlist.rendered = function() {
           .velocity(
             { 
               translateX:'0'
-            });   
+            },  "ease-out");   
       }, 700);
 }
 
@@ -56,19 +56,20 @@ Template.teamlist.events({
   				},
   				{ 
   					display: "block" 
-  				}); 	
+  				},  "ease-out"); 	
 		}, 200);
+
     setTimeout(function() {
-      $('.details#'+team + " .text")
-        .velocity(
-          { 
-            translateX:'100%'
-          })
-        .velocity(
-          { 
-            translateX:'0'
-          });   
-    }, 300);
+        $('.details#'+team + ' .text')
+          .velocity(
+            { 
+              translateX:'100%'
+            })
+          .velocity(
+            { 
+              translateX:'0'
+            },  "ease-out");   
+      }, 400);
 	}
 })
 
