@@ -3,20 +3,23 @@
 		<h1 class=''>Today's matches</h1>
 	</div>
 	<div class='today'>
-		<p>The tournament kicks off on June 6. Check back then! In the meantime, <a href="{{pathFor route='schedule'}}">check out the schedule!</a></p>
-	
+		<p><a href="{{pathFor route='schedule'}}">Check out the full schedule!</a></p>
+		<script type="text/javascript">
+		
+		</script>
 		{{#each schedule}}
-			{{#if dateIs "June 6"}}
+			{{#if dateIs "56"}}
 				<div class='fixture'>
 					<p class='playing'><span class='team'>{{home}}</span> <span class='versus'>v</span> <span class='team'>{{away}}</span></p>
 					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
+					<p class='score'></p>
 					<div class='flag'>
 						<div class='overlay'></div>
-						<div class='home'>
-							<img class='' src="/images/{{home_id}}.png">
+						<div class='home' style='background-image: url(/images/{{home_id}}.png)'>
+							<!--<img class='' src="/images/{{home_id}}.png">-->
 						</div>
-						<div class='away'>
-							<img class='' src="/images/{{away_id}}.png">
+						<div class='away' style='background-image: url(/images/{{away_id}}.png)'>
+							<!--<img class='' src="/images/{{away_id}}.png">-->
 						</div>
 					</div>
 				</div>
