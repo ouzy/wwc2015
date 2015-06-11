@@ -4,8 +4,29 @@
 	</div>
 	<div class='today'>
 		<p><a href="{{pathFor route='schedule'}}">Check out the full schedule!</a></p>
-		
+		<script type="text/javascript">
+			var match_number = 0;
+			//console.log(match_number+1);
+			//console.log( matches[match_number]);
+		</script>
+
 		{{#each schedule}}
+		<script type="text/javascript">
+			addScore(match_number);
+			match_number++;
+
+			function addScore(n) {
+				var num = n +1;
+				if (matches[n]['status']=='future'){
+					$('.flag .home#match' + num +' .score h1').append("-");
+					$('.flag .away#match' + num +' .score h1').append("-");
+				}
+				else {
+					$('.flag .home#match' + num +' .score h1').append(matches[n]['home_team']['goals']);
+					$('.flag .away#match' + num +' .score h1').append(matches[n]['away_team']['goals']);
+				}
+			}
+		</script>
 			{{#if dateIs}}
 				<div class='fixture'>
 					<p class='playing'><span class='team'>{{home}}</span> <span class='versus'>v</span> <span class='team'>{{away}}</span></p>
@@ -13,11 +34,13 @@
 					<p class='score'></p>
 					<div class='flag'>
 						<div class='overlay'></div>
-						<div class='home' style='background-image: url(/images/{{home_id}}.png)'>
+						<div class='home' id='match{{match_id}}' style='background-image: url(/images/{{home_id}}.png)'>
+							<div class='score'><h1></h1></div>
 							<!--<img class='' src="/images/{{home_id}}.png">-->
 						</div>
-						<div class='away' style='background-image: url(/images/{{away_id}}.png)'>
+						<div class='away' id='match{{match_id}}' style='background-image: url(/images/{{away_id}}.png)'>
 							<!--<img class='' src="/images/{{away_id}}.png">-->
+							<div class='score'><h1></h1></div>
 						</div>
 					</div>
 				</div>

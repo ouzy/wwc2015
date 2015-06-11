@@ -22,8 +22,13 @@
 
     });
     var matches = null; 
+    var groups = null;
     $.getJSON("http://worldcup.sfg.io/matches", function(data) {
       matches = data; 
+      //createMatches(index,matches);
+    });
+    $.getJSON("http://worldcup.sfg.io/group_results", function(data) {
+      groups = data; 
       //createMatches(index,matches);
     });
     

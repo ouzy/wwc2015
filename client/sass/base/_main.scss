@@ -461,7 +461,6 @@ span.team {
 	}
 	.flag {
 		overflow: hidden;
-		
 		@include small() {
 			left: -10px;
 			width: 100vw;
@@ -503,6 +502,15 @@ span.team {
 			@include small() {
 				height: 150px;
 			}
+		}
+		.score {
+			position: absolute;
+		  z-index: 9;
+		  left: 0;
+		  right: 0;
+		  margin: 0 auto;
+		  text-align: center;
+		  top: 50%;
 		}
 	}
 }
