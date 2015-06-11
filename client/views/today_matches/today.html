@@ -4,11 +4,9 @@
 	</div>
 	<div class='today'>
 		<p><a href="{{pathFor route='schedule'}}">Check out the full schedule!</a></p>
-		<script type="text/javascript">
 		
-		</script>
 		{{#each schedule}}
-			{{#if dateIs "56"}}
+			{{#if dateIs}}
 				<div class='fixture'>
 					<p class='playing'><span class='team'>{{home}}</span> <span class='versus'>v</span> <span class='team'>{{away}}</span></p>
 					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>

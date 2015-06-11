@@ -1,0 +1,3 @@
+Template.main.rendered = function () {
+	
+}

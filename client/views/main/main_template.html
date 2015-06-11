@@ -17,6 +17,16 @@
     ga('create', 'UA-60178639-1', 'auto');
     ga('send', 'pageview');
 
+    $(document).ready(function(){ 
+
+
+    });
+    var matches = null; 
+    $.getJSON("http://worldcup.sfg.io/matches", function(data) {
+      matches = data; 
+      //createMatches(index,matches);
+    });
+    
   </script>
 </head>
 
@@ -40,7 +50,7 @@
   </div>
 
   <div class='body_container'>
-  	{{> yield}}
+    {{> yield}}
     
   </div>
 

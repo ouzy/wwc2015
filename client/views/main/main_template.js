@@ -16,7 +16,8 @@ Template.main.rendered = function () {
 			},
 			{ 
 				display: "block" 
-			},  "ease-out"); 
+			},  "ease-out"
+		); 
 }
 
 Template.main.events({
