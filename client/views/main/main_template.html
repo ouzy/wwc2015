@@ -23,14 +23,30 @@
     });
     var matches = null; 
     var groups = null;
-    $.getJSON("http://worldcup.sfg.io/matches", function(data) {
+    $.ajax({
+      url: 'http://worldcup.sfg.io/matches',
+      async: false,
+      dataType: 'json',
+      success: function (data) {
+        matches = data;
+      }
+    });
+    $.ajax({
+      url: 'http://worldcup.sfg.io/teams/group_results',
+      async: false,
+      dataType: 'json',
+      success: function (data) {
+        groups = data;
+      }
+    });
+    /*$.getJSON("http://worldcup.sfg.io/matches", function(data) {
       matches = data; 
       //createMatches(index,matches);
     });
-    $.getJSON("http://worldcup.sfg.io/group_results", function(data) {
+    $.getJSON("http://worldcup.sfg.io/teams/group_results", function(data) {
       groups = data; 
       //createMatches(index,matches);
-    });
+    });*/
     
   </script>
 </head>
