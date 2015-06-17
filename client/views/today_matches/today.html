@@ -5,33 +5,17 @@
 	<div class='today'>
 		<p><a href="{{pathFor route='schedule'}}">Check out the full schedule!</a></p>
 		<script type="text/javascript">
-			var match_number = 0;
+			//var match_number = 0;
 			//console.log(match_number+1);
 			//console.log( matches[match_number]);
 		</script>
 
 		{{#each schedule}}
 		<script type="text/javascript">
-			addScore(match_number);
-			match_number++;
+			//addScore(match_number);
+			//match_number++;
 
-			function addScore(n) {
-				var num = n +1;
-				if (matches[n]['status']=='future'){
-					$('.flag .home#match' + num +' .score h2').append("-");
-					$('.flag .away#match' + num +' .score h2').append("-");
-				}
-				else {
-					$('.flag .home#match' + num +' .score h2').append(matches[n]['home_team']['goals']);
-					$('.flag .away#match' + num +' .score h2').append(matches[n]['away_team']['goals']);
-					if (matches[n]['status']=='completed'){ 
-							$('.flag .match_status#match' + num +' h2').append('FT');
-					}
-					else {
-						$('.flag .match_status#match' + num +' h2').append(matches[n]['status']);
-					}
-				}
-			}
+
 		</script>
 			{{#if dateIs}}
 				<div class='fixture'>
