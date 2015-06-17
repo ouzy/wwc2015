@@ -5,30 +5,12 @@
 	<div class='content schedule'><!-- GROUP STAGE -->
 		<h3>Group stage matches || June 6 - June 17</h3>
 			<script type="text/javascript">
-				var match_number = 0;
+
 				//console.log(matches[2]);
 				//console.log(matches[10]);
 			</script>
 			{{#each schedule}}
 				<div class='fixture'>
-					<script type="text/javascript">
-						console.log(match_number+1);
-						console.log( matches[match_number]);
-						addScore(match_number);
-						match_number++;
-
-						function addScore(n) {
-							var num = n +1;
-							if (matches[n]['status']=='future'){
-								$('.team.home#match' + num).append(" - ");
-								$('.team.away#match' + num).prepend(" - ");
-							}
-							else {
-								$('.team.home#match' + num).append(" "+matches[n]['home_team']['goals']);
-								$('.team.away#match' + num).prepend(matches[n]['away_team']['goals'] + " ");
-							}
-						}
-					</script>
 					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
 					<p class='playing'><span class='team home' id='match{{match_id}}'>{{home}}</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>{{away}}</span></p>
 				</div>
