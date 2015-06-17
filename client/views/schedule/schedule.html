@@ -4,11 +4,6 @@
 	</div>
 	<div class='content schedule'><!-- GROUP STAGE -->
 		<h3>Group stage matches || June 6 - June 17</h3>
-			<script type="text/javascript">
-
-				//console.log(matches[2]);
-				//console.log(matches[10]);
-			</script>
 			{{#each schedule}}
 				<div class='fixture'>
 					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
@@ -20,79 +15,79 @@
 		<h3>Round of 16</h3>
 		<div class='fixture'>
 			<p class='date'> June 20, 2015 | 16:00 ET | Lansdowne Stadium, Ottawa | Match 39</p>
-			<p class='playing'><span class='team'>Winner Group B</span> <span class='versus'>v</span> <span class='team'>3rd place groups A/C/D</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group B</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>3rd place groups A/C/D</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 20, 2015 | 19:30 ET | Commonwealth Stadium, Edmonton | Match 37</p>
-			<p class='playing'><span class='team'>Runner-up Group A</span> <span class='versus'>v</span> <span class='team'>Runner-up Group C</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Runner-up Group A</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Runner-up Group C</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 21, 2015 | 13:00 ET | Moncton Stadium, Moncton | Match 41</p>
-			<p class='playing'><span class='team'>Winner Group E</span> <span class='versus'>v</span> <span class='team'>Runner-up Group D</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group E</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Runner-up Group D</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 21, 2015 | 16:00 ET | Olympic Stadium, Montreal | Match 40</p>
-			<p class='playing'><span class='team'>Winner Group F</span> <span class='versus'>v</span> <span class='team'>Runner-up Group E</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group F</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Runner-up Group E</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 21, 2015 | 19:30 ET | BC Place Stadium, Vancouver | Match 44</p>
-			<p class='playing'><span class='team'>Winner Group A</span> <span class='versus'>v</span> <span class='team'>3rd place Groups C/D/E</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group A</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>3rd place Groups C/D/E</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 22, 2015 | 17:00 ET | Lansdowne Stadium, Ottawa | Match 43</p>
-			<p class='playing'><span class='team'>Runner-up Group B</span> <span class='versus'>v</span> <span class='team'>Runner-up F</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Runner-up Group B</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Runner-up F</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 22, 2015 | 20:00 ET | Commonwealth Stadium, Edmonton | Match 38</p>
-			<p class='playing'><span class='team'>Winner Group D</span> <span class='versus'>v</span> <span class='team'>3rd place groups B/E/F</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group D</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>3rd place groups B/E/F</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 23, 2015 | 20:00 ET | Commonwealth Stadium, Edmonton | Match 38</p>
-			<p class='playing'><span class='team'>Winner Group C</span> <span class='versus'>v</span> <span class='team'>3rd place groups A/B/F</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Group C</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>3rd place groups A/B/F</span></p>
 		</div>
 	</div>
 	<div class='content schedule'><!-- Quarterfinals -->
 		<h3>Quarterfinals</h3>
 		<div class='fixture'>
 			<p class='date'> June 26, 2015 | 16:00 ET | Olympic Stadium, Montreal | Match 46</p>
-			<p class='playing'><span class='team'>Winner Match 39</span> <span class='versus'>v</span> <span class='team'>Winner Match 40</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 39</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 40</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 26, 2015 | 19:30 ET | Lansdowne Stadium, Ottawa | Match 45</p>
-			<p class='playing'><span class='team'>Winner Match 37</span> <span class='versus'>v</span> <span class='team'>Winner Match 38</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 37</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 38</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 27, 2015 | 16:00 ET | Commonwealth Stadium, Edmonton | Match 47</p>
-			<p class='playing'><span class='team'>Winner Match 41</span> <span class='versus'>v</span> <span class='team'>Winner Match 42</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 41</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 42</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> June 27, 2015 | 19:30 ET | BC Place Stadium, Vancouver | Match 48</p>
-			<p class='playing'><span class='team'>Winner Match 43</span> <span class='versus'>v</span> <span class='team'>Winner Match 44</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 43</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 44</span></p>
 		</div>
 	</div>
 	<div class='content schedule'><!-- Semifinals -->
 		<h3>Semifinals</h3>
 		<div class='fixture'>
 			<p class='date'> June 30, 2015 | 19:00 ET | Olympic Stadium, Montreal | Match 49</p>
-			<p class='playing'><span class='team'>Winner Match 45</span> <span class='versus'>v</span> <span class='team'>Winner Match 46</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 45</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 46</span></p>
 		</div>
 		<div class='fixture'>
 			<p class='date'> July 1, 2015 | 19:00 ET | Commonwealth Stadium, Edmonton | Match 50</p>
-			<p class='playing'><span class='team'>Winner Match 47</span> <span class='versus'>v</span> <span class='team'>Winner Match 48</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 47</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 48</span></p>
 		</div>
 	</div>
 	<div class='content schedule'><!-- Third place -->
 		<h3>Third Place</h3>
 		<div class='fixture'>
 			<p class='date'> July 4, 2015 | 16:00 ET | Commonwealth Stadium, Edmonton | Match 51</p>
-			<p class='playing'><span class='team'>Loser Match 49</span> <span class='versus'>v</span> <span class='team'>Loser Match 50</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Loser Match 49</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Loser Match 50</span></p>
 		</div>
 	</div>
 	<div class='content schedule'>
 		<h3>Final</h3>
 		<div class='fixture'>
 			<p class='date'> July 5, 2015 | 19:00 ET | BC Place Stadium, Vancouver | Match 52</p>
-			<p class='playing'><span class='team'>Winner Match 49</span> <span class='versus'>v</span> <span class='team'>Winner Match 50</span></p>
+			<p class='playing'><span class='team home' id='match{{match_id}}'>Winner Match 49</span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'>Winner Match 50</span></p>
 		</div>
 	</div>
 </template>

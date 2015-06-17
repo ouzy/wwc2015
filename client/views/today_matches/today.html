@@ -18,12 +18,18 @@
 			function addScore(n) {
 				var num = n +1;
 				if (matches[n]['status']=='future'){
-					$('.flag .home#match' + num +' .score h1').append("-");
-					$('.flag .away#match' + num +' .score h1').append("-");
+					$('.flag .home#match' + num +' .score h2').append("-");
+					$('.flag .away#match' + num +' .score h2').append("-");
 				}
 				else {
-					$('.flag .home#match' + num +' .score h1').append(matches[n]['home_team']['goals']);
-					$('.flag .away#match' + num +' .score h1').append(matches[n]['away_team']['goals']);
+					$('.flag .home#match' + num +' .score h2').append(matches[n]['home_team']['goals']);
+					$('.flag .away#match' + num +' .score h2').append(matches[n]['away_team']['goals']);
+					if (matches[n]['status']=='completed'){ 
+							$('.flag .match_status#match' + num +' h2').append('FT');
+					}
+					else {
+						$('.flag .match_status#match' + num +' h2').append(matches[n]['status']);
+					}
 				}
 			}
 		</script>
@@ -34,13 +40,14 @@
 					<p class='score'></p>
 					<div class='flag'>
 						<div class='overlay'></div>
+						<div class='match_status' id='match{{match_id}}'><h2></h2></div>
 						<div class='home' id='match{{match_id}}' style='background-image: url(/images/{{home_id}}.png)'>
-							<div class='score'><h1></h1></div>
+							<div class='score'><h2></h2></div>
 							<!--<img class='' src="/images/{{home_id}}.png">-->
 						</div>
 						<div class='away' id='match{{match_id}}' style='background-image: url(/images/{{away_id}}.png)'>
 							<!--<img class='' src="/images/{{away_id}}.png">-->
-							<div class='score'><h1></h1></div>
+							<div class='score'><h2></h2></div>
 						</div>
 					</div>
 				</div>

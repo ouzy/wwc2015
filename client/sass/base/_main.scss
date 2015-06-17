@@ -461,6 +461,9 @@ span.team {
 	}
 	.flag {
 		overflow: hidden;
+	 	h2 {
+	  	font-size: 3rem;
+	  }
 		@include small() {
 			left: -10px;
 			width: 100vw;
@@ -511,7 +514,17 @@ span.team {
 		  margin: 0 auto;
 		  text-align: center;
 		  top: 50%;
+		 
 		}
 	}
+}
+
+.match_status {
+	position: absolute;
+	z-index: 9;
+	left: 0;
+  right: 0;
+  text-align: center;
+  top: 50%;
 }
 
