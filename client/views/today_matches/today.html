@@ -25,6 +25,28 @@
 				</div>
 			{{/if}}
 		{{/each}}
+		{{#each match_num}}
+			{{#if dateIs}}
+				<div class='fixture'>
+					<p class='playing'><span class='team home' id='match{{match_id}}'></span> <span class='versus'>v</span> <span class='team away' id='match{{match_id}}'></span></p>
+					<p class='date'> {{date}}, 2015 | {{time}} ET | {{stadium}}, {{location}} | Match {{match_id}}</p>
+					<p class='score'></p>
+					<div class='flag'>
+						<div class='overlay'></div>
+						<div class='match_status' id='match{{match_id}}'><h2></h2></div>
+						<div class='home' id='match{{match_id}}' style=''>
+							<div class='score'><h2></h2></div>
+							<!--<img class='' src="/images/{{home_id}}.png">-->
+						</div>
+						<div class='away' id='match{{match_id}}' style=''>
+							<!--<img class='' src="/images/{{away_id}}.png">-->
+							<div class='score'><h2></h2></div>
+						</div>
+					</div>
+				</div>
+			{{/if}}
+		{{/each}}
+
 	</div>
 	
 </template>

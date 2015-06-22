@@ -1257,8 +1257,236 @@ var groups = {
 				}
 
 		]
-}
+};
 
+var knockout = {
+	match_num: [{	
+						match_id: 37,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '19:30', // ET time
+						date: "June 20",
+						score: ''
+					},
+					{	
+						match_id: 38,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '20:00', // ET time
+						date: "June 22",
+						score: ''
+					},
+					{	
+						match_id: 39,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Ottawa',
+						location_id: 1,
+						stadium: "Lansdowne Stadium",
+						time: '16:00', // ET time
+						date: "June 20",
+						score: ''
+					},
+					{	
+						match_id: 40,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Montreal',
+						location_id: 1,
+						stadium: "Olympic Stadium",
+						time: '16:00', // ET time
+						date: "June 21",
+						score: ''
+					},
+					{	
+						match_id: 41,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Moncton',
+						location_id: 1,
+						stadium: "Moncton Stadium",
+						time: '13:00', // ET time
+						date: "June 21",
+						score: ''
+					},
+					{	
+						match_id: 42,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '20:00', // ET time
+						date: "June 23",
+						score: ''
+					},
+					{	
+						match_id: 43,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Ottawa',
+						location_id: 1,
+						stadium: "Lansdowne Stadium",
+						time: '17:00', // ET time
+						date: "June 22",
+						score: ''
+					},
+					{	
+						match_id: 44,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Vancouver',
+						location_id: 1,
+						stadium: "BC Place Stadium",
+						time: '19:30', // ET time
+						date: "June 21",
+						score: ''
+					},
+					{	
+						match_id: 45,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Ottawa',
+						location_id: 1,
+						stadium: "Lansdowne Stadium",
+						time: '19:30', // ET time
+						date: "June 26",
+						score: ''
+					},
+					{	
+						match_id: 46,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Montreal',
+						location_id: 1,
+						stadium: "Olympic Stadium",
+						time: '16:00', // ET time
+						date: "June 26",
+						score: ''
+					},
+					{	
+						match_id: 47,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '16:00', // ET time
+						date: "June 27",
+						score: ''
+					},
+					{	
+						match_id: 48,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Vancouver',
+						location_id: 1,
+						stadium: "BC Place Stadium",
+						time: '19:30', // ET time
+						date: "June 27",
+						score: ''
+					},
+					{	
+						match_id: 49,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Montreal',
+						location_id: 1,
+						stadium: "Olympic Stadium",
+						time: '19:00', // ET time
+						date: "June 30",
+						score: ''
+					},
+					{	
+						match_id: 50,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '19:00', // ET time
+						date: "July 1",
+						score: ''
+					},
+					{	
+						match_id: 51,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Edmonton',
+						location_id: 1,
+						stadium: "Commonwealth Stadium",
+						time: '16:00', // ET time
+						date: "July 4",
+						score: ''
+					},
+					{	
+						match_id: 52,
+						group: '',
+						home: '',
+						away: '',
+						home_id: '',
+						away_id: '',
+						location: 'Vancouver',
+						location_id: 1,
+						stadium: "BC Place Stadium",
+						time: '19:00', // ET time
+						date: "July 5",
+						score: ''
+					}
+
+	]
+};
 
 
 Template.main.helpers({  
@@ -1281,6 +1509,7 @@ Template.groups.helpers(
 });
 
 Template.today.helpers(match);
+Template.today.helpers(knockout);
 
 Template.today.helpers(
 	{
@@ -1328,8 +1557,9 @@ Template.today.helpers(
 	      break;
 		}
 		game_date += " " + d.getDate();
+		
 		//console.log(game_date);
-		//console.log("month: "+d.getMonth()+ " day: " + d.getDate());
+		console.log("month: "+d.getMonth()+ " day: " + d.getDate());
     return this.date === game_date;
   }
 });
