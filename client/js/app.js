@@ -362,7 +362,7 @@ var data = {
 						goalDiff: -13,
 						points: 0
 					},
-					{	id: 'jap',
+					{	id: 'jpn',
 						group: 'Group C',
 						country: "Japan", 
 						game1: 'Switzerland', 
@@ -795,7 +795,7 @@ var match = {
 						group: 'Group C',
 						home: 'Japan',
 						away: 'Switzerland',
-						home_id: 'jap',
+						home_id: 'jpn',
 						away_id: 'sui',
 						location: 'Vancouver',
 						location_id: 5,
@@ -963,7 +963,7 @@ var match = {
 						group: 'Group C',
 						home: 'Japan',
 						away: 'Cameroon',
-						home_id: 'jap',
+						home_id: 'jpn',
 						away_id: 'cam',
 						location: 'Vancouver',
 						location_id: 5,
@@ -1132,7 +1132,7 @@ var match = {
 						home: 'Ecuador',
 						away: 'Japan',
 						home_id: 'ecu',
-						away_id: 'jap',
+						away_id: 'jpn',
 						location: 'Winnipeg',
 						location_id: 6,
 						stadium: "Winnipeg Stadium",
@@ -1559,7 +1559,7 @@ Template.today.helpers(
 		game_date += " " + d.getDate();
 		
 		//console.log(game_date);
-		console.log("month: "+d.getMonth()+ " day: " + d.getDate());
+		//console.log("month: "+d.getMonth()+ " day: " + d.getDate());
     return this.date === game_date;
   }
 });
