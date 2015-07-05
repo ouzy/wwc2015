@@ -17,7 +17,8 @@ Template.today.rendered = function () {
 					$('.flag .match_status#match' + num +' h2').append('FT');
 			}
 			else {
-				$('.flag .match_status#match' + num +' h2').append(matches[n]['status']);
+				$('.flag .match_status#match' + num +' h2').append('');
+				//$('.flag .match_status#match' + num +' h2').append(matches[n]['status']);
 			}
 		}
 		if (n > 35) {
