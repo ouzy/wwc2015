@@ -39,6 +39,19 @@
         groups = data;
       }
     });
+    $.ajax({
+      headers: { 'X-Auth-Token': '680fd578ec724ed99e25fb55906fa983' },
+      url: 'http://api.football-data.org/alpha/soccerseasons/398/teams',
+      //url: 'http://api.football-data.org/alpha/fixtures?timeFrame=n1',
+      dataType: 'json',
+      type: 'GET',
+    }).done(function(response) {
+      // do something with the response, e.g. isolate the id of a linked resource        
+      var regex = /.*?(\d+)$/; // the ? makes the first part non-greedy
+      var res = regex.exec(response._links.self.href);
+      var teamId = res[1];
+      console.log("team: "+res);
+    }); 
     /*$.getJSON("http://worldcup.sfg.io/matches", function(data) {
       matches = data; 
       //createMatches(index,matches);
